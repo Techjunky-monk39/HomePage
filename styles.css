@@ -115,6 +115,13 @@ section img {
     margin: 20px 0;
 }
 
+/* Adjusting the book cover image size */
+.book-cover-img {
+    max-width: 100px; /* Reduced width significantly */
+    height: auto; /* Maintain aspect ratio */
+    margin: 20px 0; /* Adding some spacing */
+}
+
 /* Updated background for the contact section */
 #contact {
     background: url('images/NO_EVIL-BACKGROUND.png') no-repeat center center;
