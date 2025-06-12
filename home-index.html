@@ -5,220 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TechJunky HomePage</title>
     <link href="https://fonts.googleapis.com/css2?family=Arial:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        body, html {
-            margin: 0;
-            padding: 0;
-            width: 100%;
-            height: 100%;
-            font-family: 'Arial', sans-serif;
-            scroll-behavior: smooth;
-        }
-
-        .container {
-            width: 80%;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 15px;
-        }
-
-        header {
-            background: url('images/NO_EVIL-BACKGROUND.png') no-repeat center center;
-            background-size: cover;
-            color: white;
-            text-align: center;
-            padding: 50px 0;
-        }
-
-        header h1 {
-            font-size: 3rem;
-            margin: 0;
-        }
-
-        nav {
-            margin-top: 10px;
-        }
-
-        nav ul {
-            list-style: none;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-        }
-
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-            transition: color 0.3s ease;
-        }
-
-        nav ul li a:hover {
-            color: #007bff;
-        }
-
-        .section {
-            position: relative;
-            width: 100%;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            transition: opacity 0.5s ease, transform 0.5s ease;
-            opacity: 0;
-            transform: translateY(50px);
-            padding: 20px;
-            box-sizing: border-box;
-        }
-
-        .section.active {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        #about {
-            background-color: #f8f9fa;
-            color: #333;
-        }
-
-        #projects {
-            background-color: #e9ecef;
-            color: #444;
-        }
-
-        #channels {
-            background-color: #dee2e6;
-            color: #555;
-        }
-
-        #applications {
-            background-color: #f8f9fa;
-            color: #333;
-        }
-
-        #contact {
-            background-color: #e9ecef;
-            color: #444;
-        }
-
-        h2 {
-            font-size: 2rem;
-            margin-bottom: 20px;
-            text-align: center;
-        }
-
-        p {
-            font-size: 1.1rem;
-            line-height: 1.7;
-            max-width: 80%;
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        form {
-            width: 80%;
-            max-width: 600px;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            display: flex;
-            flex-direction: column;
-        }
-
-        form label {
-            display: block;
-            margin-top: 10px;
-            text-align: left;
-        }
-
-        form input, form textarea {
-            width: 100%;
-            padding: 10px;
-            margin-top: 5px;
-            margin-bottom: 15px;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-            box-sizing: border-box;
-        }
-
-        form textarea {
-            resize: vertical;
-        }
-
-        form button {
-            background-color: #007bff;
-            color: white;
-            padding: 10px 15px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 1rem;
-            transition: background-color 0.3s ease;
-            align-self: center;
-        }
-
-        form button:hover {
-            background-color: #0056b3;
-        }
-
-        footer {
-            background-color: #343a40;
-            color: white;
-            text-align: center;
-            padding: 10px 0;
-            position: relative;
-            bottom: 0;
-            width: 100%;
-        }
-
-        @media (max-width: 768px) {
-            .section {
-                padding: 80px 20px;
-            }
-
-            h1 {
-                font-size: 2rem;
-            }
-
-            h2 {
-                font-size: 1.5rem;
-            }
-
-            p {
-                font-size: 1rem;
-                max-width: 95%;
-            }
-
-            nav ul li {
-                margin: 0 10px;
-            }
-
-            nav ul li a {
-                font-size: 1rem;
-            }
-
-            form {
-                width: 95%;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .section {
-                padding: 60px 15px;
-            }
-
-            nav ul {
-                flex-direction: column;
-            }
-
-            nav ul li {
-                margin: 5px 0;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Header Section -->
@@ -241,7 +28,12 @@
     <section id="about" class="section">
         <div class="container">
             <h2>About</h2>
-            <p>Welcome to TechJunky! I am a producer, artist, and financial advisor. This is the hub for all my projects, channels, and applications.</p>
+            <p>Discover How We Can Help You Succeed</p>
+            <p>At TechJunky LLC (aka TechJunky Monkey), we're dedicated to helping you achieve your goals. Whether you're looking to innovate with cutting-edge tech, bring your creative visions to life, or grow your business, we have solutions tailored for you. Our diverse expertise spans from music and video production to robust website and application development.</p>
+            <p>Beyond Tech: Our Diverse Offerings</p>
+            <p>Through our parent company, Moneey Company, our consulting firm can guide you through complex ventures, including real estate and stock market strategies, with a particular focus on penny stock investments through our partnership with Alpaca.</p>
+            <p>We also provide practical software development services and tech assistance for those who need a helping hand with their current technology. And if you're looking for unique tools, explore our specialty products, including custom-flashed Raspberry Pi Picos for enhanced security and more.</p>
+            <p>Let us help you achieve your goals, no matter how diverse they may be.</p>
         </div>
     </section>
 
@@ -270,6 +62,25 @@
         <div class="container">
             <h2>Applications</h2>
             <p>Discover my applications for sale or use. Contact me for the first version!</p>
+        </div>
+    </section>
+
+    <!-- Advertisements Section -->
+    <section id="advertisements" class="section">
+        <div class="container">
+            <h2>Advertisements</h2>
+            <p>Explore our latest promotions and services designed to help you achieve your goals. From tech solutions to creative projects, we have something for everyone!</p>
+            <!-- Placeholder for leasing ad space -->
+        </div>
+    </section>
+
+    <!-- Book Preview Section -->
+    <section id="book-preview" class="section">
+        <div class="container">
+            <h2>Book Preview: Trap Baby Business</h2>
+            <img class="book-cover-img" src="images/SharkcityEbook Cover_20250214_160628_0000.png" alt="Trap Baby Business Book Cover">
+            <p>Discover the inspiring journey of resilience and success in "Trap Baby Business." This book offers valuable insights and lessons for anyone looking to overcome challenges and achieve greatness.
+            <p>Through this Legend, you'll find the tools and motivation to not only succeed but also appreciate your journey. Available now!</p>
         </div>
     </section>
 
