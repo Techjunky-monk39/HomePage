@@ -1,70 +1,112 @@
-/* Header bar for logo in corner */
+/* General Styles */
+body {
+    font-family: 'Segoe UI', 'Roboto', 'Arial', sans-serif;
+    background: #f7f9fb;
+    color: #222;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-top: 48px;
+    margin-bottom: 16px;
+    letter-spacing: 1px;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 18px;
+    text-align: center;
+}
+
+p, li {
+    font-size: 1.15rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #2e4376;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.2s;
+}
+
+.btn:hover {
+    background: #1a237e;
+}
+
+/* Header Styles */
+header {
+    background: #f7f9fb;
+    padding-top: 20px;
+}
+
 .header-bar {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    background: #1a237e;
-    border-radius: 0 0 24px 24px;
-    box-shadow: 0 4px 16px rgba(46,67,118,0.10);
-    padding: 8px 24px 8px 12px;
-    position: relative;
+    justify-content: space-between;
+    padding: 8px 24px;
     max-width: 900px;
-    margin: 0 auto 0 auto;
+    margin: 0 auto;
 }
+
 .logo-corner {
     max-width: 48px;
     height: 48px;
     border-radius: 12px;
     margin-right: 18px;
-    box-shadow: 0 2px 8px rgba(46,67,118,0.10);
+    box-shadow: 0 2px 8px rgba(46,67,118,0.1);
     background: #fff;
     object-fit: contain;
     border: 2px solid #fff;
 }
-/* Header content styling for balanced layout */
+
 .header-content {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 40px 0 24px 0;
+    padding: 40px 20px;
     background: #1a237e;
     border-radius: 24px;
     box-shadow: 0 8px 32px rgba(46,67,118,0.12);
-    margin: 0 auto 32px auto;
+    margin: 20px auto 32px auto;
     max-width: 600px;
-/* Removed stray closing brace */
-.header-content .home-image {
-    max-width: 70px;
-    margin-bottom: 18px;
-    border-radius: 18px;
-    box-shadow: 0 4px 16px rgba(46,67,118,0.18);
-    border: 2px solid #fff;
-    background: #fff;
-/* Removed stray closing brace at end of file */
+    color: #fff;
+}
+
 .header-content h1 {
     color: #fff;
-    font-size: 2.2rem;
-    font-weight: 800;
-    margin-bottom: 8px;
-    text-shadow: 0 2px 8px rgba(46,67,118,0.10);
+    text-shadow: 0 2px 8px rgba(46,67,118,0.1);
 }
+
 .header-desc {
     color: #e0e0e0;
-    font-size: 1.1rem;
-    margin-bottom: 0;
     text-align: center;
     max-width: 480px;
 }
-/* Modern Navbar Styles */
+
+/* Navbar Styles */
 .navbar {
-    margin: 32px auto 24px auto;
     max-width: 900px;
     background: #fff;
-    box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
     border-radius: 16px;
     padding: 0 12px;
 }
+
 .nav-list {
     list-style: none;
     display: flex;
@@ -73,6 +115,7 @@
     margin: 0;
     padding: 0;
 }
+
 .nav-item {
     text-decoration: none;
     color: #222;
@@ -84,90 +127,90 @@
     margin: 0 8px;
     display: block;
 }
-.nav-item:hover {
+
+.nav-item:hover, .nav-item.active {
     background: #0077ff;
     color: #fff;
-    box-shadow: 0 2px 8px rgba(0,119,255,0.10);
+    box-shadow: 0 2px 8px rgba(0,119,255,0.1);
 }
 
-body {
-    font-family: 'Segoe UI', 'Roboto', 'Arial', sans-serif;
-    background: #f7f9fb;
-    color: #222;
-    margin: 0;
-    padding: 0;
-}
-
-h1 {
-    font-size: 3rem;
-    font-weight: 800;
-    margin-top: 48px;
-    margin-bottom: 16px;
-    letter-spacing: 1px;
-}
-
-section {
+/* Section Styles */
+.section {
     background: #fff;
     border-radius: 16px;
     box-shadow: 0 2px 12px rgba(0,0,0,0.07);
-    max-width: 900px;
     margin: 32px auto;
     padding: 32px 40px;
 }
 
-h2 {
-    font-size: 2rem;
-    font-weight: 700;
-    margin-bottom: 18px;
+/* Project Cards */
+.project-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
 }
 
-p, li {
-    font-size: 1.15rem;
-    line-height: 1.7;
-}
-
-
-.container {
-    width: 80%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
-}
-
-section {
-    height: 100vh;
-    padding: 60px 20px;
+.card {
+    background: #f9f9f9;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
     text-align: center;
+    max-width: 250px;
 }
 
-section h1 {
-    margin-top: 0;
-}
-
-section img {
-    width: 100%;
+.project-img {
+    max-width: 100px;
     height: auto;
+    border-radius: 12px;
+    margin-bottom: 15px;
 }
 
-/* Smaller, professional logo at the top */
-.logo-image {
-    max-width: 120px;
-    width: 100%;
-    border-radius: 16px;
-    margin-bottom: 12px;
-    box-shadow: 0 4px 16px rgba(46,67,118,0.12);
-    object-fit: contain;
-    background: #fff;
-    padding: 8px;
+.card h3 {
+    margin-top: 0;
+    font-size: 1.5rem;
 }
-/* Contact section background and image overlay */
-/* Contact section with solid background color */
+
+.card a {
+    margin-top: 10px;
+}
+
+/* YouTube Section */
+.youtube-channels {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.channel-link {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #0077ff;
+    text-decoration: none;
+}
+
+/* Book Preview */
+.book-cover-img {
+    max-width: 150px;
+    height: auto;
+    margin: 20px auto;
+    display: block;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Contact Section */
 .contact-bg {
     position: relative;
     background: #2e4376;
+    color: #fff;
     min-height: 480px;
     overflow: hidden;
-}
+    padding: 60px 20px;
 }
 
 .contact-image-bg {
@@ -181,46 +224,39 @@ section img {
     z-index: 1;
 }
 
-/* Contact form content with white card look */
 .contact-content {
     position: relative;
     z-index: 2;
     background: #fff;
+    color: #222;
     border-radius: 18px;
-    box-shadow: 0 4px 24px rgba(46,67,118,0.10);
+    box-shadow: 0 4px 24px rgba(46,67,118,0.1);
     padding: 2em;
     max-width: 420px;
     margin: 2em auto;
 }
-}
 
 .contact-content h2 {
-    margin-top: 0;
-    font-size: 2em;
-    font-weight: 700;
     color: #2e4376;
 }
 
-.contact-content label {
+#contactForm label {
     display: block;
     margin-top: 1em;
     font-weight: 500;
-    color: #2e4376;
 }
 
-.contact-content input,
-.contact-content textarea {
+#contactForm input,
+#contactForm textarea {
     width: 100%;
     padding: 0.7em;
     margin-top: 0.5em;
     border-radius: 8px;
     border: 1px solid #dbe2ef;
     font-size: 1em;
-    background: #f7f9fc;
-    color: #222;
 }
 
-.contact-content button {
+#contactForm button {
     margin-top: 1.5em;
     padding: 0.8em 2em;
     border-radius: 8px;
@@ -229,166 +265,57 @@ section img {
     font-weight: 600;
     border: none;
     cursor: pointer;
-    transition: background 0.2s;
 }
-
-.contact-content button:hover {
-    background: #1b2c4a;
-/* Removed stray closing braces outside of any selector */
 
 #message-display {
     margin-top: 20px;
     font-size: 1.1rem;
     font-weight: bold;
     text-align: center;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.6);
     padding: 15px;
     border-radius: 8px;
-    width: 90%;
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 0 18px;
-    background: rgba(255,255,255,0.97);
-    border-radius: 18px;
-    box-shadow: 0 4px 24px rgba(46,67,118,0.10);
-    margin-bottom: 32px;
-    animation: fadeInUp 1s;
+}
+
 #message-display.error {
-@keyframes fadeInDown {
-    from { opacity: 0; transform: translateY(-30px); }
-    to { opacity: 1; transform: translateY(0); }
-}
-
-@keyframes fadeInUp {
-    from { opacity: 0; transform: translateY(30px); }
-    to { opacity: 1; transform: translateY(0); }
-}
-
-@media (max-width: 600px) {
-    .container {
-        padding: 0 8px;
-    }
-    .navbar {
-        padding: 0 4px;
-    }
-    .nav-item {
-        padding: 10px 8px;
-        font-size: 16px;
-    }
-    h1 {
-        font-size: 2rem;
-    }
-    .home-image {
-        max-width: 140px;
-    }
-}
-    color: #ffcccc;
-    background: rgba(211, 47, 47, 0.8);
-    border: 1px solid #d32f2f;
+    color: #d32f2f;
+    background: #ffcccc;
 }
 
 #message-display.success {
-    color: #ccffcc;
-    background: rgba(56, 142, 60, 0.8);
-    border: 1px solid #388e3c;
+    color: #388e3c;
+    background: #ccffcc;
 }
 
-/* Moved inline styles for images to external CSS */
-.ad-images img {
-    max-width: 100%;
-    height: auto;
-    margin: 10px;
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #1a237e;
+    color: #fff;
+    border-radius: 16px 16px 0 0;
+    margin-top: 32px;
 }
 
-/* Moved inline styles for the book preview image */
-.book-preview img {
-    max-width: 100%;
-    height: auto;
-    margin: 20px 0;
-}
-
-/* Adjusting the book cover image size */
-.book-cover-img {
-    max-width: 100px; /* Reduced width significantly */
-    height: auto; /* Maintain aspect ratio */
-    margin: 20px 0; /* Adding some spacing */
-}
-
-/* Updated background for the contact section */
-#contact {
-    background: url('images/NO_EVIL-BACKGROUND.png') no-repeat center center;
-    background-size: cover;
-    color: white;
-    padding: 60px 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-}
-
-#contact h2 {
-    color: white;
-    margin-bottom: 30px;
-}
-
-#contactForm {
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    width: 90%;
-    max-width: 600px;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-#contactForm label {
-    color: #333;
-    font-weight: bold;
-    text-align: left;
-    margin-bottom: 5px;
-}
-
-#contactForm input,
-#contactForm textarea {
-    color: #333;
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    padding: 12px;
-    font-size: 1rem;
-    border-radius: 5px;
-    width: calc(100% - 24px);
-    box-sizing: border-box;
-}
-
-#contactForm textarea {
-    resize: vertical;
-    min-height: 120px;
-}
-
-#contactForm button {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 12px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1.1rem;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-    align-self: flex-end;
-    margin-top: 10px;
-}
-
-#contactForm button:hover {
-    background-color: #0056b3;
-}
-
-#contact .container {
-    width: auto;
-    max-width: none;
-    padding: 0;
+/* Media Queries for smaller screens */
+@media (max-width: 768px) {
+    .nav-list {
+        flex-wrap: wrap;
+    }
+    .nav-item {
+        padding: 10px 12px;
+        font-size: 16px;
+    }
+    h1 {
+        font-size: 2.2rem;
+    }
+    h2 {
+        font-size: 1.8rem;
+    }
+    .project-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card {
+        max-width: 90%;
+    }
 }
