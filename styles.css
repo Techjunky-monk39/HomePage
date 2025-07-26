@@ -1,3 +1,26 @@
+/* Header bar for logo in corner */
+.header-bar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background: #1a237e;
+    border-radius: 0 0 24px 24px;
+    box-shadow: 0 4px 16px rgba(46,67,118,0.10);
+    padding: 8px 24px 8px 12px;
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto 0 auto;
+}
+.logo-corner {
+    max-width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    margin-right: 18px;
+    box-shadow: 0 2px 8px rgba(46,67,118,0.10);
+    background: #fff;
+    object-fit: contain;
+    border: 2px solid #fff;
+}
 /* Header content styling for balanced layout */
 .header-content {
     display: flex;
@@ -138,11 +161,13 @@ section img {
     padding: 8px;
 }
 /* Contact section background and image overlay */
+/* Contact section with solid background color */
 .contact-bg {
     position: relative;
-    background: #f5f7fa;
+    background: #2e4376;
     min-height: 480px;
     overflow: hidden;
+}
 }
 
 .contact-image-bg {
@@ -156,15 +181,17 @@ section img {
     z-index: 1;
 }
 
+/* Contact form content with white card look */
 .contact-content {
     position: relative;
     z-index: 2;
-    background: rgba(255,255,255,0.92);
+    background: #fff;
     border-radius: 18px;
     box-shadow: 0 4px 24px rgba(46,67,118,0.10);
     padding: 2em;
     max-width: 420px;
     margin: 2em auto;
+}
 }
 
 .contact-content h2 {
