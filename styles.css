@@ -10,7 +10,7 @@
     box-shadow: 0 8px 32px rgba(46,67,118,0.12);
     margin: 0 auto 32px auto;
     max-width: 600px;
-}
+/* Removed stray closing brace */
 .header-content .home-image {
     max-width: 70px;
     margin-bottom: 18px;
@@ -18,7 +18,7 @@
     box-shadow: 0 4px 16px rgba(46,67,118,0.18);
     border: 2px solid #fff;
     background: #fff;
-}
+/* Removed stray closing brace at end of file */
 .header-content h1 {
     color: #fff;
     font-size: 2.2rem;
@@ -126,23 +126,88 @@ section img {
     height: auto;
 }
 
-.home-image {
-    max-width: 220px;
+/* Smaller, professional logo at the top */
+.logo-image {
+    max-width: 120px;
     width: 100%;
-    border-radius: 22px;
-    margin-bottom: 18px;
-    box-shadow: 0 8px 32px rgba(46,67,118,0.18);
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    transition: transform 0.3s, box-shadow 0.3s;
+    border-radius: 16px;
+    margin-bottom: 12px;
+    box-shadow: 0 4px 16px rgba(46,67,118,0.12);
+    object-fit: contain;
     background: #fff;
-    border: 3px solid #2b5876;
+    padding: 8px;
 }
-.home-image:hover {
-    transform: scale(1.07) rotate(-2deg);
-    box-shadow: 0 16px 48px rgba(46,67,118,0.28);
+/* Contact section background and image overlay */
+.contact-bg {
+    position: relative;
+    background: #f5f7fa;
+    min-height: 480px;
+    overflow: hidden;
 }
+
+.contact-image-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://indigo-holy-alpaca-940.mypinata.cloud/ipfs/bafybeihw2s2upn3nefkmplzk6en32galoq6hrnj2uhwwnf663xijgejige') center/cover no-repeat;
+    opacity: 0.18;
+    z-index: 1;
+}
+
+.contact-content {
+    position: relative;
+    z-index: 2;
+    background: rgba(255,255,255,0.92);
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(46,67,118,0.10);
+    padding: 2em;
+    max-width: 420px;
+    margin: 2em auto;
+}
+
+.contact-content h2 {
+    margin-top: 0;
+    font-size: 2em;
+    font-weight: 700;
+    color: #2e4376;
+}
+
+.contact-content label {
+    display: block;
+    margin-top: 1em;
+    font-weight: 500;
+    color: #2e4376;
+}
+
+.contact-content input,
+.contact-content textarea {
+    width: 100%;
+    padding: 0.7em;
+    margin-top: 0.5em;
+    border-radius: 8px;
+    border: 1px solid #dbe2ef;
+    font-size: 1em;
+    background: #f7f9fc;
+    color: #222;
+}
+
+.contact-content button {
+    margin-top: 1.5em;
+    padding: 0.8em 2em;
+    border-radius: 8px;
+    background: #2e4376;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.contact-content button:hover {
+    background: #1b2c4a;
+/* Removed stray closing braces outside of any selector */
 
 #message-display {
     margin-top: 20px;
