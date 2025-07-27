@@ -185,6 +185,49 @@ header {
     gap: 10px;
     margin-top: 20px;
 }
+.youtube-channels {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 2em;
+}
+
+.channel-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    padding: 1em;
+    width: 220px;
+    min-width: 180px;
+}
+
+.qr-img {
+    width: 160px;
+    height: 160px;
+    object-fit: contain;
+    margin-bottom: 0.5em;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+}
+
+.channel-label {
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-bottom: 0.3em;
+    text-align: center;
+}
+
+.channel-desc {
+    font-size: 0.95em;
+    color: #555;
+    text-align: center;
+}
 
 .channel-link {
     font-size: 1.2rem;
